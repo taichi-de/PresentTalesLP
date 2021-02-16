@@ -2,7 +2,6 @@
 body {
   font-family: "Lora", "Avenir", "Helvetica Neue", "Helvetica", "Arial", YuGothic, "Yu Gothic", Meiryo;
   font-weight: 200;
-  letter-spacing: .08em;
   margin: 0;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -76,6 +75,7 @@ body::-webkit-scrollbar {
 .mv-content .mv-link {
   text-decoration: none;
   color: #fff;
+  letter-spacing: .2em;
 }
 
 .mv-content .mv-link h1 {

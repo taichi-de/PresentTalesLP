@@ -12,7 +12,6 @@ $breakpoints: (
 body {
   font-family: "Lora", "Avenir", "Helvetica Neue", "Helvetica", "Arial", YuGothic, "Yu Gothic", Meiryo;
   font-weight: 200;
-  letter-spacing: .08em;
   margin: 0;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -81,6 +80,7 @@ body {
   .mv-link {
     text-decoration: none;
     color: #fff;
+    letter-spacing: .2em;
     h1 {
       font-weight: 400;
       font-size: 24px;
