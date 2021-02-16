@@ -1,24 +1,14 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Lora&display=swap");
-
-$layout-width-inner: 1180px;
-
-$breakpoints: (
-  "sp": "screen and (max-width: 767px)",
-  "tab": "screen and (max-width: #{$layout-width-inner - 1px})",
-  "pc": "screen and (min-width: #{$layout-width-inner})"
-);
-
 body {
   font-family: "Lora", "Avenir", "Helvetica Neue", "Helvetica", "Arial", YuGothic, "Yu Gothic", Meiryo;
   margin-top: 0;
 }
+
 .inner {
   width: 90%;
   margin: 0 auto;
 }
 
-// ----------------------NowLoading----------------------------- //
 #loader-bg {
   background: #f3f3f3;
   height: 100%;
@@ -28,6 +18,7 @@ body {
   left: 0px;
   z-index: 10002;
 }
+
 #loader-bg img {
   background: #f3f3f3;
   position: fixed;
@@ -38,7 +29,7 @@ body {
   transform: translate(-50%, -50%);
   z-index: 10002;
 }
-// ----------------------Header----------------------------- //
+
 #header {
   background: #f3f3f3;
   position: fixed;
@@ -49,39 +40,47 @@ body {
   opacity: 0.8;
   z-index: 10;
 }
+
 .img-logo,
 .nav_humburger,
 .nav_unshown {
   display: none;
 }
+
 #nav_content {
   display: flex;
-  align-items: center; //垂直中央寄せ
+  align-items: center;
   text-align: center;
   justify-content: baseline;
   height: 100%;
 }
+
 #item-nav {
   text-align: center;
-  margin: 0 auto; //親要素に対して中央寄せ↓
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  li {
-    display: inline-block;
-    padding: 0 2em;
-  }
-  a {
-    text-decoration: none;
-    color: #3e3e3e;
-  }
-  a.active,
-  a:hover {
-    border-bottom: 3px solid #ffaa3b;
-    opacity: 1;
-  }
+  margin: 0 auto;
 }
+
+#item-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+#item-nav li {
+  display: inline-block;
+  padding: 0 2em;
+}
+
+#item-nav a {
+  text-decoration: none;
+  color: #3e3e3e;
+}
+
+#item-nav a.active,
+#item-nav a:hover {
+  border-bottom: 3px solid #ffaa3b;
+  opacity: 1;
+}
+
 #nav_close {
   position: fixed;
   z-index: 99;
@@ -93,11 +92,13 @@ body {
   opacity: 0;
   transition: 0.3s ease-in-out;
 }
+
 #icon-global {
   width: 14px;
   height: 14px;
   margin: 0 3px 3px 0;
 }
+
 @media screen and (max-width: 767px) {
   #header .inner {
     display: flex;
@@ -145,36 +146,43 @@ body {
     color: #f3f3f3;
   }
 }
+
 #nav_input:checked ~ #nav_content {
   position: fixed;
   transform: translateX(calc(100% - 350px));
   box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
 }
+
 #nav_input:checked ~ #nav_open {
   z-index: 9999;
 }
+
 #nav_input:checked ~ #nav_open .nav_img_opened {
   display: block;
 }
+
 #nav_input:checked ~ #nav_open .nav_img_closed {
   display: none;
 }
+
 #nav_input:checked ~ #nav_close {
   display: block;
   opacity: 0.8;
 }
+
 .nav_img_opened {
   display: none;
 }
 
-// ----------------------MV----------------------------- //
 .bg-mv-img {
-  // margin: 0 calc(50% - 50vw);
   margin: 0 -5%;
   width: 100vw;
   height: 100vh;
   background: url("images/mv-bg.jpg") no-repeat center center/cover;
-  @media screen and (max-width: 767px) {
+}
+
+@media screen and (max-width: 767px) {
+  .bg-mv-img {
     min-width: 100%;
     height: 100vh;
     background-position: 65% 0;
@@ -190,49 +198,20 @@ body {
   transform: translateY(-50%);
   text-align: center;
   color: #fff;
-  // @media screen and (max-width: 767px) {
-    //   margin: 0 auto;
-    //   max-width: 343px;
-    //   top: 50%;
-    //   left: 5%;
-    //   text-align: center;
-    // }
-    .mv-link {
-      text-decoration: none;
-      color: #fff;
-      opacity: .74;
-      h1 {
-        font-weight: 400;
-        font-size: 24px;
-        // @media screen and (max-width: 767px) {
-          //   font-size: 28px;
-      // }
-      }
-      p {
-        font-weight: 400;
-        margin-top: 40px;
-      // @media screen and (max-width: 767px) {
-      //   font-size: 16px;
-      // }
-      }
-    }
-  }
+}
 
-// .contact-button {
-//   background: #ffaa3b;
-//   text-align: center;
-//   box-shadow: 0px 2px 2px #efefef;
-//   border-bottom: 0.1875em solid #ffaa3b;
-//   border: 0px;
-//   width: 280px;
-//   height: 51px;
-//   font-size: 18px;
-//   border-radius: 12px;
-//   opacity: 1;
-//   transition: all 0.3s ease 0s;
-//   @media screen and (max-width: 767px) {
-//     margin: 0 auto;
-//     width: 60%;
-//     font-size: 18px;
-//   }
-// }
+.mv-content .mv-link {
+  text-decoration: none;
+  color: #fff;
+  opacity: .74;
+}
+
+.mv-content .mv-link h1 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.mv-content .mv-link p {
+  font-weight: 400;
+  margin-top: 40px;
+}
