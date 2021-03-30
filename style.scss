@@ -6,17 +6,18 @@ $layout-width-inner: 1180px;
 $breakpoints: (
   "sp": "screen and (max-width: 767px)",
   "tab": "screen and (max-width: #{$layout-width-inner - 1px})",
-  "pc": "screen and (min-width: #{$layout-width-inner})"
+  "pc": "screen and (min-width: #{$layout-width-inner})",
 );
 
 body {
-  font-family: "Lora", "Avenir", "Helvetica Neue", "Helvetica", "Arial", YuGothic, "Yu Gothic", Meiryo;
+  font-family: "Lora", "Avenir", "Helvetica Neue", "Helvetica", "Arial",
+    YuGothic, "Yu Gothic", Meiryo;
   font-weight: 200;
   margin: 0;
   -ms-overflow-style: none;
   scrollbar-width: none;
   &::-webkit-scrollbar {
-    display:none;
+    display: none;
   }
 }
 .inner {
@@ -80,17 +81,17 @@ body {
   .mv-link {
     text-decoration: none;
     color: #fff;
-    letter-spacing: .2em;
+    letter-spacing: 0.2em;
     h1 {
       font-weight: 400;
       font-size: 24px;
-      opacity: .74;
+      opacity: 0.74;
     }
     p {
       font-size: 24px;
       font-weight: 400;
       margin-top: 40px;
-      opacity: .74;
+      opacity: 0.74;
     }
   }
   @media screen and (max-width: 767px) {
@@ -98,7 +99,8 @@ body {
     left: 40%;
     transform: translateY(-30%);
     transform: translateX(-20%);
-    .mv-link h1, .mv-link p {
+    .mv-link h1,
+    .mv-link p {
       font-size: 16px;
     }
   }
@@ -131,7 +133,7 @@ body {
     top: 30px;
     left: 30px;
     color: #fff;
-    opacity: .74;
+    opacity: 0.74;
     .text-area {
       float: left;
       max-width: 60%;
@@ -140,10 +142,19 @@ body {
       -ms-overflow-style: none;
       scrollbar-width: none;
       &::-webkit-scrollbar {
-        display:none;
+        display: none;
       }
       h1 {
         margin-top: 0;
+        font-weight: 300;
+      }
+      p {
+        a.impressum-link {
+          text-decoration: none;
+          &:hover {
+            cursor: pointer;
+          }
+        }
       }
     }
     @media screen and (max-width: 767px) {
