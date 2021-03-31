@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lora&display=swap");
 body {
-  font-family: "Lora", "Avenir", "Helvetica Neue", "Helvetica", "Arial", YuGothic, "Yu Gothic", Meiryo;
+  font-family: "Lora", "Avenir", "Helvetica Neue", "Helvetica", "Arial",
+    YuGothic, "Yu Gothic", Meiryo;
   font-weight: 200;
   margin: 0;
   -ms-overflow-style: none;
@@ -45,7 +46,7 @@ body::-webkit-scrollbar {
   margin: 0 calc(50% - 50vw);
   width: 100vw;
   min-height: 100vh;
-  background: url("images/mv-bg.jpg") no-repeat center center/cover;
+  background: url("img/mv-bg.jpg") no-repeat center center/cover;
 }
 
 @media screen and (max-width: 767px) {
@@ -75,20 +76,20 @@ body::-webkit-scrollbar {
 .mv-content .mv-link {
   text-decoration: none;
   color: #fff;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
 }
 
 .mv-content .mv-link h1 {
   font-weight: 400;
   font-size: 24px;
-  opacity: .74;
+  opacity: 0.74;
 }
 
 .mv-content .mv-link p {
   font-size: 24px;
   font-weight: 400;
   margin-top: 40px;
-  opacity: .74;
+  opacity: 0.74;
 }
 
 @media screen and (max-width: 767px) {
@@ -98,7 +99,8 @@ body::-webkit-scrollbar {
     transform: translateY(-30%);
     transform: translateX(-20%);
   }
-  .mv-content .mv-link h1, .mv-content .mv-link p {
+  .mv-content .mv-link h1,
+  .mv-content .mv-link p {
     font-size: 16px;
   }
 }
@@ -115,7 +117,7 @@ body::-webkit-scrollbar {
   margin: 0 calc(50% - 50vw);
   width: 100vw;
   height: 100vh;
-  background: url("images/imp-bg.jpg") no-repeat center center/cover;
+  background: url("img/imp-bg.jpg") no-repeat center center/cover;
 }
 
 @media screen and (max-width: 767px) {
@@ -133,7 +135,7 @@ body::-webkit-scrollbar {
   top: 30px;
   left: 30px;
   color: #fff;
-  opacity: .74;
+  opacity: 0.74;
 }
 
 #impressum .imp-content .text-area {

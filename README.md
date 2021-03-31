@@ -2,7 +2,7 @@
 
 Web Design & Development(2021/2 -)
 
-![mv-bg](images/presenttalesLP.png)
+![mv-bg](img/presenttalesLP.png)
 
 > ## PRESENT TALES, INC.
 >
