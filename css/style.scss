@@ -115,6 +115,7 @@ body {
     width: 100vw;
     height: 100vh;
     background: url("../img/imp-bg.jpg") no-repeat center center/cover;
+    background-position: center;
     @media screen and (max-width: 767px) {
       min-width: 100%;
       height: 100vh;
@@ -144,6 +145,9 @@ body {
         margin-top: 0;
         font-weight: 300;
       }
+      h2 {
+        font-weight: 200;
+      }
       p {
         a.impressum-link {
           text-decoration: none;
@@ -151,6 +155,9 @@ body {
             cursor: pointer;
           }
         }
+      }
+      ul {
+        padding-left: 20px;
       }
     }
     @media screen and (max-width: 767px) {

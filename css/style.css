@@ -67,7 +67,8 @@ body {
     margin: 0 calc(50% - 50vw);
     width: 100vw;
     height: 100vh;
-    background: url("../img/imp-bg.jpg") no-repeat center center/cover; }
+    background: url("../img/imp-bg.jpg") no-repeat center center/cover;
+    background-position: center; }
     @media screen and (max-width: 767px) {
       #impressum .bg-imp-img {
         min-width: 100%;
@@ -93,10 +94,14 @@ body {
       #impressum .imp-content .text-area h1 {
         margin-top: 0;
         font-weight: 300; }
+      #impressum .imp-content .text-area h2 {
+        font-weight: 200; }
       #impressum .imp-content .text-area p a.impressum-link {
         text-decoration: none; }
         #impressum .imp-content .text-area p a.impressum-link:hover {
           cursor: pointer; }
+      #impressum .imp-content .text-area ul {
+        padding-left: 20px; }
     @media screen and (max-width: 767px) {
       #impressum .imp-content {
         max-width: 90vw; }
