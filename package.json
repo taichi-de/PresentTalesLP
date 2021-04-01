@@ -1,0 +1,24 @@
+{
+  "name": "presenttaleslp",
+  "version": "1.0.0",
+  "description": "Web Design & Development(2021/2 -)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taichi-de/PresentTalesLP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taichi-de/PresentTalesLP/issues"
+  },
+  "homepage": "https://github.com/taichi-de/PresentTalesLP#readme",
+  "dependencies": {
+    "gulp-sass": "^4.1.0"
+  },
+  "devDependencies": {
+    "postcss": "^8.2.9"
+  }
+}
