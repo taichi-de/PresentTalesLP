@@ -16,6 +16,7 @@
   },
   "homepage": "https://github.com/taichi-de/PresentTalesLP#readme",
   "dependencies": {
+    "@loadingio/loading.css": "^2.0.1",
     "gulp-sass": "^4.1.0"
   },
   "devDependencies": {
